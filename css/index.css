@@ -1,0 +1,17 @@
+#cover-img {
+	background-image: url("../temp.png");
+	background-repeat: no-repeat;
+	background-size: auto 450px;
+	background-position: center;
+	height: 450px;
+}
+
+#cover-img-container {
+	background-color: #0A0B13;
+	width: 100%;
+}
+
+#brandlink {
+	color: white;
+	font-weight: bold;
+}
