@@ -1,5 +1,5 @@
 #cover-img {
-	background-image: url("../temp.png");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/Minecraft pro pic.png");
 	background-repeat: no-repeat;
 	background-size: auto 450px;
 	background-position: center;
