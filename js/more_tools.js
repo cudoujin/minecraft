@@ -37,8 +37,8 @@ const armours = MoreToolsData["armours"]
 let armour_extended = armours.filter(names => !names[0].includes("{armour}"));
 for (const names of armours) {
     if (names[0].includes("{armour}")) {
-        const en_name = ToolTypes['en'].map(t => names[0].replace("{armour}", t))
-        const zh_name = ToolTypes['zh'].map(t => names[1].replace("{armour}", t))
+        const en_name = ArmourTypes['en'].map(t => names[0].replace("{armour}", t))
+        const zh_name = ArmourTypes['zh'].map(t => names[1].replace("{armour}", t))
         const temp = en_name.map((element, index) => [element, zh_name[index]])
         console.log(temp)
         armour_extended = [...armour_extended, ...temp]
