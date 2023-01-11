@@ -1,0 +1,42 @@
+{% if include.mod_name contains "Bounding Box" -%}
+    
+{%- elsif include.mod_name contains "Building Wands" -%}
+
+<strong>工具:</strong><br>
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th>放置長度(格)</th>
+            <th>使用次數上限</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Stone Wand</td>
+            <td>16</td>
+            <td>256</td>
+        </tr>
+        <tr>
+            <td>Iron Wand</td>
+            <td>32</td>
+            <td>512</td>
+        </tr>
+        <tr>
+            <td>Diamond Wand</td>
+            <td>64</td>
+            <td>2048</td>
+        </tr>
+        <tr>
+            <td>Netherite Wand</td>
+            <td>256</td>
+            <td>4096</td>
+        </tr>
+    </tbody>
+</table>
+
+{%- elsif include.mod_name contains "CC: Restitched" -%}
+
+
+
+{% endif -%}

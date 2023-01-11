@@ -1,0 +1,10 @@
+exclude:
+  - LICENSE
+  - README.md
+  - .gitattributes
+
+timezone: Asia/Hong_Kong
+soc_name: 同明相照
+all_in_one_windows_url: https://www.mediafire.com/file/a1w6mk7wctx5tzq/CU_Doujin_Modpack-1.1-client.zip/file
+all_in_one_mac_url: https://www.mediafire.com/file/a1w6mk7wctx5tzq/CU_Doujin_Modpack-1.1-client.zip/file
+modpack_url: https://www.mediafire.com/file/a1w6mk7wctx5tzq/CU_Doujin_Modpack-1.1-client.zip/file

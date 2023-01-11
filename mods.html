@@ -1,105 +1,26 @@
-<!doctype html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>CUHK Doujin Minecraft Server</title>
-	<meta name="description" content="CUHK Doujin Minecraft Server Promotion and Documentation">
-	<meta name="author" content="CUHK Doujin">
-	<link rel="icon" href="icon.png">
-	
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-	
-	<style>
-		html {
-			scroll-behavior: smooth;
-		}
-		
-		details {
-			border: 1px solid #aaa;
-			border-radius: 6px;
-			padding: 8px 8px;
-			margin: 0.25rem 0px
-		}
-		
-		details table {
-			margin: 1rem 0px;
-			font-size: .875em;
-			font-family: var(--bs-font-monospace);
-		}
-		
-		details th,td {
-			padding: 0px 0.5rem;
-		}
-		
-		#contents > div > p {
-			margin-top: 0;
-			margin-bottom: 0;
-		}
-	</style>
-	
-	<script src="js/more_tools_data.js"></script>
-	<script src="js/more_tools.js" defer></script>
-</head>
-<body>
-	<header class="container-fluid p-0">
-		<nav class="navbar navbar-expand-md navbar-dark bg-dark px-4">
-			<div class="navbar-brand me-auto p-0">
-				<a class="p-0 mx-2 nav-link text-light fw-bold" href="index.html" id="brandlink">
-					<img src="icon.png" class="" alt="icon" width="50" height="50">
-					同明相照
-				</a>
-			</div>
+---
+layout: default
+css:
+  - css/mods.css
+js:
+  - js/more_tools_data.js
+  - js/more_tools.js
+  - js/animation_close_details.js
+---
 
-			<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div class="navbar-collapse collapse" id="navbarNav">
-				<ul class="navbar-nav ms-auto">
-					<li class="nav-item mx-auto p-2">
-						<a class="nav-link" href="index.html">首頁</a>
-					</li>
-					<li class="nav-item mx-auto p-2">
-						<a class="nav-link" href="">插件</a>
-					</li>
-					<li class="nav-item mx-auto p-2">
-						<a class="nav-link" href="#">活動</a>
-					</li>
-					<li class="nav-item mx-auto p-2">
-						<a class="nav-link" href="#">相簿</a>
-					</li>
-					<li class="nav-item mx-auto p-2">
-						<a class="nav-link" href="#">支援</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</header>
-	
-	
-	<div class="container-fluid">
+<div class="container-fluid">
 	<div class="row">
-	
 		<!-- https://stackoverflow.com/questions/21868610/make-column-fixed-position-in-bootstrap -->
-		<div class="col-md-2 p-4 bg-light fs-6" style="min-width: 200px;">
-			<h5 class="mx-auto my-0 text-center fw-bold">Plugins</h5>
+		<div class="col-md-2 p-4 bg-light fs-6" id="left-nav">
+			<h5 class="mx-auto my-0 text-center fw-bold">模組介紹</h5>
 			<hr>
 			<ul class="nav nav-pills flex-column">
-				<li><a href="#plug1" class="nav-link link-dark py-0">Buiders Wand</a></li>
-				<li><a href="#plug2" class="nav-link link-dark py-0">Colored Signs</a></li>
-				<li><a href="#plug3" class="nav-link link-dark py-0">Core Protect</a></li>
-				<li><a href="#plug4" class="nav-link link-dark py-0">Falling Override</a></li>
-				<li><a href="#plug5" class="nav-link link-dark py-0">Interaction Visualizer</a></li>
-				<li><a href="#plug6" class="nav-link link-dark py-0">Interactive Chat</a></li>
-				<li><a href="#plug7" class="nav-link link-dark py-0">LWC Extended</a></li>
-				<li><a href="#plug8" class="nav-link link-dark py-0">Minecart Speed Plus</a></li>
-				<li><a href="#plug9" class="nav-link link-dark py-0">Spectator Mode</a></li>
-				<li><a href="#plug10" class="nav-link link-dark py-0">Paper Tweaks</a></li>
+				{% for mod in site.data.mods %}
+					<li><a href="#mod{{ forloop.index }}" class="nav-link link-dark py-0">{{ mod[0] }}</a></li>
+				{% endfor %}
 			</ul>
 			
-			<h5 class="mx-auto mb-0 mt-3 text-center fw-bold">Resource Packs</h5>
+			<h5 class="mx-auto mb-0 mt-3 text-center fw-bold">資源包</h5>
 			<hr>
 			<ul class="nav nav-pills flex-column">
 				<li><a href="#rss1" class="nav-link link-dark py-0">Furnaces Reimagined</a></li>
@@ -119,56 +40,54 @@
 		</div>
 		
 		<div class="col p-4 mx-5 text-black" id="contents">
-			<h4 class="fw-bold">Plugins</h4>
-			<div class="my-4" id="plug1">
-				<h5>Buiders Wand</h5>
-				<p>
-				<a href="https://www.spigotmc.org/resources/builders-wand-building-help-api-configurable-supports-multiple-plugins-1-8-1-18.51577/">https://www.spigotmc.org/resources/51577/</a><br>
-				Buiders Wand提供了建造大型建築必備的填平工具，它可以幫助你快速填滿一整行甚至整塊平地。(暫時無法放置半磚)<br>
-				<strong>合成表:</strong><br>
-				Stone Wand:<br>
-				半徑: 8格<br>
-				使用次數上限: 25次<br>
-				<img src="img/plugins/stone wand.jpg" alt="Stone Wand" width="204"><br>
-				Iron Wand:<br>
-				半徑: 16格<br>
-				使用次數上限: 75次<br>
-				<img src="img/plugins/iron wand.jpg" alt="Iron Wand" width="204"><br>
-				Diamond Wand:<br>
-				半徑: 24格<br>
-				使用次數上限: 250次<br>
-				<img src="img/plugins/diamond wand.jpg" alt="Diamond Wand" width="204"><br>
-				Infinity Wand:<br>
-				半徑: 32格<br>
-				使用次數上限: 無限<br>
-				<img src="img/plugins/infinity wand.jpg" alt="Infinity Wand" width="204"><br>
-				</p>
-			</div>
-			<div class="my-4" id="plug2">
-				<h5>Colored Signs</h5>
-				<p>
-				<a href="https://www.spigotmc.org/resources/colored-signs.31676/">https://www.spigotmc.org/resources/31676/</a><br>
-				Colored Signs是轉換告示牌文字顏色的插件，它支援任何一種RGB顏色及粗體等等的格式。格式化代碼可到<a href="https://minecraft.fandom.com/zh/wiki/%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%BB%A3%E7%A0%81">這裡</a>查看。<br>
-				<strong>示範:</strong>
-				</p>
-				<img src="img/plugins/sign text.png" alt="Sign without Minecraft color" width="300">
-				<img src="img/plugins/coloured sign.png" alt="Sign with Minecraft color" width="300">
-				<br>
-				<img src="img/plugins/RGB sign text.png" alt="Sign without RGB color" width="300">
-				<img src="img/plugins/RGB coloured sign.png" alt="Sign with RGB color" width="300">
-			</div>
-			<div class="my-4" id="plug3">
-				<h5>Core Protect</h5>
-				<p>
-				<a href="https://www.spigotmc.org/resources/coreprotect.8631/">https://www.spigotmc.org/resources/8631/</a><br>
-				Core Protect記錄Minecraft世界的變化，若你的建築被破壞，它可以幫助回溯。 (管理員專用)</p>
-			</div>
-			<div class="my-4" id="plug4">
-				<h5>Falling Override</h5>
-				<p><a href="https://dev.bukkit.org/projects/fallingoverride">https://dev.bukkit.org/projects/fallingoverride</a><br>
-				Falling Override回復了原版終界傳送門複製物品的機制。
-				</p>
-			</div>
+			<details>
+				<summary>必需安裝的模組</summary>
+				<pre>
+{% for mod_hash in site.data.mods -%}
+	{%- assign mod_name = mod_hash[0] -%}
+	{%- assign mod = mod_hash[1] -%}
+	{%- if mod.required == true -%}
+<a href="#mod{{ forloop.index }}">{{ mod_name }}</a>
+{% endif -%}
+{%- endfor -%}
+				</pre>
+			</details>
+
+			<details>
+				<summary>懶人包同時安裝的模組</summary>
+				<pre>
+{% for mod_hash in site.data.mods -%}
+	{%- assign mod_name = mod_hash[0] -%}
+	{%- assign mod = mod_hash[1] -%}
+	{%- if mod.required == "optional" -%}
+<a href="#mod{{ forloop.index }}">{{ mod_name }}</a>
+{% endif -%}
+{%- endfor -%}
+				</pre>
+			</details>
+			
+			<!-- ==================== mods description ==================== -->
+
+			<h4 class="fw-bold">模組介紹</h4>
+			<hr>
+			{% for mod_hash in site.data.mods -%}
+				{%- assign mod_name = mod_hash[0] -%}
+				{%- assign mod = mod_hash[1] -%}
+				<div class="my-4" id="mod{{ forloop.index }}">
+					<h5><a href="{{ mod.url }} ">{{ mod_name }}</a></h5>
+					{% if mod.is_library -%}
+						<p class="library-indicator">不是供玩家直接使用。</p>
+					{%- endif -%}
+					{% if mod.side == "both" and mod.required == false -%}
+						<p class="library-indicator">伺服器支援此模組，但懶人包不會安裝，你可自行下載。</p>
+					{%- endif -%}
+					<p>{{ mod.desc }}</p>
+					{% include mod_desc.html mod_name=mod_name %}
+				</div>
+			{%- endfor -%}
+			
+<!--
+
 			<div class="my-4" id="plug5">
 				<h5>Interaction Visualizer</h5>
 				<p>
@@ -189,7 +108,7 @@
 				<a href="https://www.spigotmc.org/resources/interactivechat-show-items-inventory-in-chat-custom-chat-keywords-bungee-velocity-support.75870/">https://www.spigotmc.org/resources/75870/</a><br>
 				Interactive Chat能讓你在聊天中展示物品或位置等資訊，跟朋友溝通無難度。只要聊天時加上佔位文字，插件就會以對應資訊替代佔位文字。<br>
 				<strong>示範:</strong><br>
-				<img src="img/plugins/ic demo.png" alt="Interactive Chat Demo" width="400"><br>
+				<img alt="Interactive Chat Demo" width="400"><br>
 				<strong>佔位文字:</strong><br>
 				<code>[i]</code> 或 <code>[item]</code><br>
 				展示手持物品。<br>
@@ -238,21 +157,7 @@
 				</p>
 				<strong>示範:</strong><br>
 				最高車速16m/s<br>
-				<img src="img/plugins/msp 1.png" alt="Minecart Speed Plus Demo 1" width="300"><br>
-				最高車速4m/s<br>
-				<img src="img/plugins/msp 2.png" alt="Minecart Speed Plus Demo 2" width="300"><br>
-				礦車飛起來<br>
-				<img src="img/plugins/msp 3.png" alt="Minecart Speed Plus Demo 3" width="300"><br>
-			</div>
-			<div class="my-4" id="plug9">
-				<h5>Spectator Mode</h5>
-				<p>
-				<a href="https://www.spigotmc.org/resources/smp-spectator-mode-1-18-support.77267/">https://www.spigotmc.org/resources/77267/</a><br>
-				Spectator Mode提供有限制的旁觀者模式，建築師可用此功能查看建築物內大大小小的角落，更易spawnproof。<br>
-				<strong>指令:</strong><br>
-				<code>/s</code><br>
-				切換旁觀者模式。<br>
-				</p>
+				
 			</div>
 			<div class="my-4" id="plug10">
 				<h5>Paper Tweaks</h5>
@@ -292,10 +197,13 @@
 				搜尋最近的村民的工作台。<br>
 				</p>
 			</div>
-			
+-->
+
+
 			<hr>
+			<!-- ==================== resourcepack description ==================== -->
 			
-			<h4 class="fw-bold">Resource Packs</h4>
+			<h4 class="fw-bold">資源包</h4>
 			<div class="my-4" id="rss1">
 				<h5>Furnaces Reimagined</h5>
 				<p>
@@ -391,8 +299,10 @@ Music</pre>
 					<summary>用鐵砧把工具命名成以下名字就會顯示不同的模型</summary>
 					<table>
 						<thead>
-							<th>名字</th>
-							<th>工具</th>
+							<tr>
+								<th>名字</th>
+								<th>工具</th>
+							</tr>
 						</thead>
 						<tbody id="more-tools-tools">
 						</tbody>
@@ -402,8 +312,10 @@ Music</pre>
 					<summary>用鐵砧把裝甲命名成以下名字就會顯示不同的模型</summary>
 					<table>
 						<thead>
-							<th>名字</th>
-							<th>裝甲</th>
+							<tr>
+								<th>名字</th>
+								<th>裝甲</th>
+							</tr>
 						</thead>
 						<tbody id="more-tools-armours">
 						</tbody>
@@ -602,22 +514,5 @@ Fire
 		</div>
 		
 		
-	
 	</div>
-	</div>
-
-
-	<footer class="py-3 bg-dark text-center text-light">
-		<p class="m-0">同明相照</p>
-		<p class="m-0">歡迎透過以下途徑聯絡我們</p>
-		<a href="https://www.instagram.com/cudoujinsoc/"><i class="bi bi-instagram text-warning"></i></a> &nbsp;
-		<a href="https://www.facebook.com/cudoujin/"><i class="bi bi-facebook"></i></a> &nbsp;
-		Email: cudoujin@gmail.com<br>
-		最後更新: <span id="last-update"></span>
-	</footer>
-
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-	<script src="last_update.js"></script>
-
-</body>
-</html>
+</div>

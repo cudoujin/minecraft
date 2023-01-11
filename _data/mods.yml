@@ -1,0 +1,237 @@
+
+Architectury API:
+  url: https://www.curseforge.com/minecraft/mc-mods/architectury-api
+  desc: Architectury API 抽象化了 Fabric API 和 Forge API，讓開發者能夠跨平台開發。
+  side: both
+  required: optional
+  is_library: yes
+Bounding Box Outline Reloaded:
+  url: https://www.curseforge.com/minecraft/mc-mods/bounding-box-outline-reloaded
+  desc: Bounding Box Outline Reloaded 以各種顏色顯示自然生成的建築結構或3D生態域邊界，也可以顯示史萊姆區塊。
+  side: both
+  required: no
+Building Wands:
+  url: https://www.curseforge.com/minecraft/mc-mods/building-wands
+  desc: Building Wands 提供了建造大型建築必備的填平工具，它可以幫助你快速填滿一整行甚至整塊平地。
+  side: both
+  required: yes
+"CC: Restitched":
+  url: https://www.curseforge.com/minecraft/mc-mods/cc-restitched
+  desc: "CC: Restitched 是 ComputerCraft 的 Fabric 版本，它添加了許多不同的電腦和烏龜機械人，你可以使用 Lua 編程以控制它們執行不同的任務。"
+  side: both
+  required: yes
+CIT Resewn:
+  url: https://www.curseforge.com/minecraft/mc-mods/cit-resewn
+  desc: CIT Resewn 用作替代 OptiFine 的自訂物品材質功能，它能替換物品的外觀。須開啟 Allow Broken Paths 選項才能支援 OptiFine 的材質包。
+  side: client
+  required: optional
+Cloth Config API:
+  url: https://www.curseforge.com/minecraft/mc-mods/cloth-config
+  desc: Cloth Config API 是模組設定畫面的 API。
+  side: both
+  required: yes
+  is_library: yes
+Continuity:
+  url: https://www.curseforge.com/minecraft/mc-mods/continuity
+  desc: Continuity 用作替代 OptiFine 的連接材質功能，支援所有使用 OptiFine Custom Texture Models (CTM) 格式和 OptiFine 發光材質格式的資源包。如安裝了 Sodium，需要額外安裝 Indium 才能運作。
+  side: client
+  required: optional
+Create Chunkloading:
+  url: https://www.curseforge.com/minecraft/mc-mods/create-chunkloading
+  desc: Create Chunkloading 添加了區塊載入方塊，方塊必須放在移動中的 Create 裝置才會載入附近的區塊。能用於避免特定 Create 裝置損壞。
+  side: both
+  required: yes
+Create Fabric:
+  url: https://www.curseforge.com/minecraft/mc-mods/create-fabric
+  desc: Create 是一個為建築、裝飾和自動化提供各種工具和方塊的模組。
+  side: both
+  required: yes
+Create Crafts & Additions:
+  url: https://www.curseforge.com/minecraft/mc-mods/createaddition
+  desc: Create Crafts & Additions 添加了從 FE 產生 Create 動能的電動機和從 Create 動能產生 FE 的75%效率交流發電機，方便傳輸能量。
+  side: both
+  required: yes
+Custom Entity Models:
+  url: https://www.curseforge.com/minecraft/mc-mods/custom-entity-models-cem
+  desc: Custom Entity Models (CEM) 用作替代 OptiFine 的自訂實體模型功能，支援 OptiFine 的材質包。
+  side: client
+  required: optional
+Decor4Fabric:
+  url: https://www.curseforge.com/minecraft/mc-mods/decor4fabric
+  desc: Decor4Fabric 是裝飾模組，它為遊戲添加了許多新的家具方塊，大多數方塊都有特殊功能！例如可以將地毯放在小凳子上。
+  side: both
+  required: yes
+Emotecraft:
+  url: https://www.curseforge.com/minecraft/mc-mods/emotecraft
+  desc:
+  side: both
+  required: optional
+Environmental Creepers:
+  url: https://www.curseforge.com/minecraft/mc-mods/environmental-creepers
+  desc: Environmental Creepers 用於調整 Creeper 爆炸的模組。
+  side: server
+  required: no
+Exline's Furniture Mod:
+  url: https://www.curseforge.com/minecraft/mc-mods/exlines-furniture
+  desc: Exline's Furniture Mod 是傢俱模組，大部分傢俱都可以互動。
+  side: both
+  required: yes
+Fabric API:
+  url: https://www.curseforge.com/minecraft/mc-mods/fabric-api
+  desc: Fabric API 是 Fabric 核心庫，大多數模組都會用到。
+  side: both
+  required: yes
+  is_library: yes
+FerriteCore:
+  url: https://www.curseforge.com/minecraft/mc-mods/ferritecore-fabric
+  desc: FerriteCore 用於減少記憶體使用量。
+  side: client
+  required: optional
+Forge Config API Port:
+  url: https://www.curseforge.com/minecraft/mc-mods/forge-config-api-port-fabric
+  desc: Forge Config API Port 是 Forge Config API 的 Fabric 移植版本。
+  side: both
+  required: yes
+  is_library: yes
+Hey That's Mine:
+  url: https://www.curseforge.com/minecraft/mc-mods/htm
+  desc: HTM 是權限管理模組，用於保護玩家的容器。你可以用指令設定其他人對容器的存取權，並右鍵該方塊來套用。
+  side: server
+  required: no
+Indium:
+  url: https://www.curseforge.com/minecraft/mc-mods/indium
+  desc: Indium 為 Sodium 提供了對 Fabric Rendering API 的支援，讓其他渲染模組能與 Sodium 相容。
+  side: client
+  required: optional
+  is_library: yes
+Iris Shaders:
+  url: https://www.curseforge.com/minecraft/mc-mods/irisshaders
+  desc: Iris 用作替代 OptiFine 的光影功能，以高 FPS 着稱，支援所有 OptiFine 光影包。
+  side: client
+  required: optional
+Just Enough Items (JEI):
+  url: https://www.curseforge.com/minecraft/mc-mods/jei
+  desc: Just Enough Items (JEI) 是著名的物品和配方查看模組。
+  side: both
+  required: optional
+Ledger:
+  url: https://www.curseforge.com/minecraft/mc-mods/ledger
+  desc: Ledger 是記錄 Minecraft 世界的變化，若你的建築被破壞，它可以幫助回溯 (管理員專用)。指令詳情可查看<a href="https://www.quiltservertools.net/Ledger/v1.2.6/">這裏</a>。
+  side: server
+  required: no
+Lithium:
+  url: https://www.curseforge.com/minecraft/mc-mods/lithium
+  desc: Lithium 是通用最佳化模組，它致力於在不改變任何行為的情況下改進許多系統 (遊戲物理、生物 AI 等)，提高遊戲 FPS。
+  side: both
+  required: optional
+Logical Zoom:
+  url: https://www.curseforge.com/minecraft/mc-mods/logical-zoom
+  desc: Logical Zoom 用作替代 OptiFine 的<kbd>C</kbd>鍵放大功能，配合望遠鏡可放至最大。
+  side: client
+  required: optional
+Macaw's Bridges:
+  url: https://www.curseforge.com/minecraft/mc-mods/macaws-bridges
+  desc: Macaw's Bridges 添加了不同材質的橋樑，橋樑可以插上火把點亮，部分會有特別功能。
+  side: both
+  required: yes
+Macaw's Doors:
+  url: https://www.curseforge.com/minecraft/mc-mods/macaws-doors
+  desc: Macaw's Doors 添加了不同材質的門。
+  side: both
+  required: yes
+Macaw's Fences and Walls:
+  url: https://www.curseforge.com/minecraft/mc-mods/macaws-fences-and-walls
+  desc: Macaw's Fences and Walls 添加了不同材質的柵欄、牆壁和閘門，部分會有特別功能。
+  side: both
+  required: yes
+Macaw's Lights and Lamps:
+  url: https://www.curseforge.com/minecraft/mc-mods/macaws-lights-and-lamps
+  desc: Macaw's Lights and Lamps 添加了不同風格的燈，按住<kbd>Shift</kbd>和<kbd>右鍵</kbd>來開關燈。燈的高度可以調整。
+  side: both
+  required: yes
+Macaw's Paintings:
+  url: https://www.curseforge.com/minecraft/mc-mods/macaws-paintings
+  desc: Macaw's Paintings 添加了不同風格的畫。僅用於裝飾。
+  side: both
+  required: yes
+Macaw's Paths and Pavings:
+  url: https://www.curseforge.com/minecraft/mc-mods/macaws-paths-and-pavings
+  desc: Macaw's Paths and Pavings 添加了不同風格的小徑。僅用於裝飾。
+  side: both
+  required: yes
+Macaw's Roofs:
+  url: https://www.curseforge.com/minecraft/mc-mods/macaws-paintings
+  desc: Macaw's Roofs 添加了不同材質的屋頂。屋頂排水槽可以被雨水填滿。
+  side: both
+  required: yes
+Macaw's Trapdoors:
+  url: https://www.curseforge.com/minecraft/mc-mods/macaws-trapdoors
+  desc: Macaw's Trapdoors 添加了不同材質的地板門。
+  side: both
+  required: yes
+Macaw's Windows:
+  url: https://www.curseforge.com/minecraft/mc-mods/macaws-windows
+  desc: Macaw's Windows 添加了不同風格的窗和窗簾，部分可<kbd>右鍵</kbd>開關。
+  side: both
+  required: yes
+Mod Menu:
+  url: https://www.curseforge.com/minecraft/mc-mods/modmenu
+  desc: Mod Menu 添加了顯示已安裝模組的畫面，並顯示模組設定。
+  side: client
+  required: optional
+No Chat Reports:
+  url: https://www.curseforge.com/minecraft/mc-mods/no-chat-reports
+  desc: No Chat Reports 刪除了 1.19 的聊天加密，Minecraft 將無法確認聊天信息是由你發出，它還禁用了玩家聊天檢舉功能。
+  side: both
+  required: optional
+Puzzles Lib:
+  url: https://www.curseforge.com/minecraft/mc-mods/puzzles-lib
+  desc: Puzzles Lib 是另一個跨平台程式庫。
+  side: both
+  required: yes
+  is_library: yes
+Smooth Boot:
+  url: https://www.curseforge.com/minecraft/mc-mods/smooth-boot
+  desc: Smooth Boot 使 Minecraft 載入更快更流暢，避免卡頓及停止回應的問題。
+  side: client
+  required: optional
+Sodium Extra:
+  url: https://www.curseforge.com/minecraft/mc-mods/sodium-extra
+  desc: Sodium Extra 把 Sodium 的設定畫面更換成接近 OptiFine 的畫面。
+  side: client
+  required: optional
+Sodium:
+  url: https://www.curseforge.com/minecraft/mc-mods/sodium
+  desc: Sodium 用作替代 OptiFine 的渲染引擎，它比 OptiFine 大大提高了 FPS 和相容性。
+  side: client
+  required: optional
+Speed Carts:
+  url: https://www.curseforge.com/minecraft/mc-mods/speed-carts
+  desc: Speed Carts 新增了透過告示牌調整礦車車速的功能，將Minecraft的高速鐵路夢想化為現實。在路軌旁插上告示牌，第一行寫上<code>數字</code>，礦車的最高車速便會變成<code>數字</code>m/s。
+  side: server
+  required: no
+Starlight:
+  url: https://www.curseforge.com/minecraft/mc-mods/starlight
+  desc: Starlight 是重寫光照引擎以增加性能和修復光照錯誤的模組。
+  side: both
+  required: optional
+Styled Chat:
+  url: https://www.curseforge.com/minecraft/mc-mods/styled-chat
+  desc: Styled Chat 能讓你在聊天中展示物品或位置等資訊，跟朋友溝通無難度。只要聊天時加上佔位文字，模組就會以對應資訊替代佔位文字。你也可以更改文字顏色。
+  side: server
+  required: no
+Text Utilities:
+  url: https://www.curseforge.com/minecraft/mc-mods/text-utilities
+  desc: Text Utilities 使告示牌、書和鐵砧的文字能有不同的顏色和格式。
+  side: both
+  required: optional
+Visual Workbench:
+  url: https://www.curseforge.com/minecraft/mc-mods/visual-workbench
+  desc: Visual Workbench 為工作台加入了動畫。當你在工作台合成物品時，其他人可在工作台上方看見放入的物品。
+  side: both
+  required: yes
+Where Is It:
+  url: https://www.curseforge.com/minecraft/mc-mods/where-is-it
+  desc: Where Is It 用於搜索附近箱子是否有指定物品。
+  side: both
+  required: no

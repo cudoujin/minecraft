@@ -1,5 +1,5 @@
 #cover-img {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/Minecraft pro pic.png");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/Minecraft_pro_pic.png");
 	background-repeat: no-repeat;
 	background-size: auto 450px;
 	background-position: center;
@@ -15,3 +15,82 @@
 	color: white;
 	font-weight: bold;
 }
+
+.purple-text {
+	color: rgb(150 128 228) !important;
+}
+
+#server-type-box {
+	width: 80%;
+}
+
+.arrow-animation .bi-arrow-right {
+	display: inline-block;
+	transform: translateX(0);
+	transition: 0.25s;
+	transition-timing-function: ease-out;
+}
+
+.arrow-animation:hover .bi-arrow-right {
+	transform: translateX(75%);
+}
+
+.section-margin {
+	margin-bottom: 7rem;
+	padding: 0;
+}
+
+#download-box {
+	/*width: 90%;*/
+}
+
+#download-box > div {
+	min-width: 350px;
+}
+
+#download-box > div > div {
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 16px;
+	padding: 20px;
+	background: rgba(128, 128, 128, 0.15);
+	width: 100%;
+	height: 100%;
+}
+
+#download-box > div > div > div > a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size: 1.25rem;
+}
+
+#download-box > div > div > a {
+	color: rgb(220 213 246);
+}
+
+
+#win-download-box {
+	border-color: #215497a0;
+	font-weight: 600;
+}
+
+#win-download-box > div {
+	border-radius: 10px;
+	background: #215497a0;
+}
+
+#mac-download-box {
+	border-color: #c0431aa0;
+	font-weight: 600;
+}
+
+#mac-download-box > div {
+	border-radius: 10px;
+	background: #c0431aa0;
+}
+
+.fs-small {
+	font-size: small;
+}
+

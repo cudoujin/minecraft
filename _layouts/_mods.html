@@ -1,0 +1,600 @@
+---
+layout: default
+css:
+  - css/mods.css
+js:
+  - js/more_tools_data.js
+  - js/more_tools.js
+  - js/animation_close_details.js
+---
+	
+<div class="container-fluid">
+	<div class="row">
+	
+		<!-- https://stackoverflow.com/questions/21868610/make-column-fixed-position-in-bootstrap -->
+		<div class="col-md-2 p-4 bg-light fs-6" style="min-width: 250px;">
+			<h5 class="mx-auto my-0 text-center fw-bold">模組</h5>
+			<hr>
+			<ul class="nav nav-pills flex-column">
+				<li><a href="#mod1" class="nav-link link-dark py-0">Building Wands</a></li>
+				<li><a href="#mod2" class="nav-link link-dark py-0">CC: Restitched</a></li>
+				<li><a href="#mod3" class="nav-link link-dark py-0">CIT Resewn</a></li>
+				<li><a href="#plug4" class="nav-link link-dark py-0">Continuity</a></li>
+				<li><a href="#plug5" class="nav-link link-dark py-0">Create Chunkloading</a></li>
+				<li><a href="#plug6" class="nav-link link-dark py-0">Create Fabric</a></li>
+				<li><a href="#plug7" class="nav-link link-dark py-0">Create Crafts & Additions</a></li>
+				<li><a href="#plug8" class="nav-link link-dark py-0">Custom Entity Models (CEM)</a></li>
+				<li><a href="#plug9" class="nav-link link-dark py-0">Decor4Fabric</a></li>
+				<li><a href="#plug10" class="nav-link link-dark py-0">Emotecraft (Fabric)</a></li>
+			</ul>
+			
+			<h5 class="mx-auto mb-0 mt-3 text-center fw-bold">資源包</h5>
+			<hr>
+			<ul class="nav nav-pills flex-column">
+				<li><a href="#rss1" class="nav-link link-dark py-0">Furnaces Reimagined</a></li>
+				<li><a href="#rss2" class="nav-link link-dark py-0">Andros Discord Emojis</a></li>
+				<li><a href="#rss3" class="nav-link link-dark py-0">Blades of Majestica</a></li>
+				<li><a href="#rss4" class="nav-link link-dark py-0">Boss Music</a></li>
+				<li><a href="#rss5" class="nav-link link-dark py-0">Elytrapack</a></li>
+				<li><a href="#rss6" class="nav-link link-dark py-0">Genshin Elytra</a></li>
+				<li><a href="#rss7" class="nav-link link-dark py-0">Golem's Family</a></li>
+				<li><a href="#rss8" class="nav-link link-dark py-0">More Tools</a></li>
+				<li><a href="#rss9" class="nav-link link-dark py-0">Nongfu's Fantasy Weapons</a></li>
+				<li><a href="#rss10" class="nav-link link-dark py-0">S33R Terrariums</a></li>
+				<li><a href="#rss11" class="nav-link link-dark py-0">Tailored Hats</a></li>
+				<li><a href="#rss12" class="nav-link link-dark py-0">Vanilla Tweaks</a></li>
+				<li><a href="#rss13" class="nav-link link-dark py-0">JV Hats</a></li>
+			</ul>
+		</div>
+		
+		<div class="col p-4 mx-5 text-black" id="contents">
+			<details>
+				<summary>必需安裝的模組</summary>
+				<pre>
+<a href="">Building Wands</a>
+<a href="">CC: Restitched</a>
+<a href="">Cloth Config API (Fabric/Forge)</a>
+<a href="">Create Chunkloading</a>
+<a href="">Create Fabric</a>
+<a href="">Create Crafts & Additions</a>
+<a href="">Decor4Fabric・v1.2.1・Fixes & Fences Update</a>
+<a href="">Exline's Furniture Mod</a>
+<a href="">Fabric API</a>
+<a href="">Forge Config API Port</a>
+<a href="">Macaw's Bridges</a>
+<a href="">Macaw's Doors</a>
+<a href="">Macaw's Fences and Walls</a>
+<a href="">Macaw's Lights and Lamps</a>
+<a href="">Macaw's Paintings</a>
+<a href="">Macaw's Paths and Pavings</a>
+<a href="">Macaw's Roofs</a>
+<a href="">Macaw's Trapdoors</a>
+<a href="">Macaw's Windows</a>
+<a href="">Puzzles Lib</a>
+<a href="">Visual Workbench</a></pre>
+			</details>
+
+			
+			<details>
+				<summary>建議安裝的模組</summary>
+				<pre>
+<a href="">Architectury API (Fabric/Forge)</a>
+<a href="">CIT Resewn</a>
+<a href="">Continuity</a>
+<a href="">Custom Entity Models (CEM)</a>
+<a href="">Emotecraft (Fabric)</a>
+<a href="">FerriteCore (Fabric)</a>
+<a href="">Indium</a>
+<a href="">Iris Shaders</a>
+<a href="">Just Enough Items (JEI)</a>
+<a href="">Lithium (Fabric)</a>
+<a href="">Logical Zoom</a>
+<a href="">Mod Menu</a>
+<a href="">No Chat Reports</a>
+<a href="">Smooth Boot (Fabric)</a>
+<a href="">Sodium</a>
+<a href="">Starlight (Fabric)</a>
+<a href="">Text Utilities</a></pre>
+			</details>
+			
+			<!--------------------------------------------------- mods description --------------------------------------------------->
+
+			<h4 class="fw-bold">模組</h4>
+			<hr>
+			<div class="my-4" id="mod1">
+				<h5><a href="https://www.curseforge.com/minecraft/mc-mods/building-Wands">Building Wands</a></h5>
+				<p>
+				Building Wands提供了建造大型建築必備的填平工具，它可以幫助你快速填滿一整行甚至整塊平地。<br>
+				<strong>工具:</strong><br>
+				<table>
+					<thead>
+						<tr>
+							<th></th>
+							<th>放置長度(格)</th>
+							<th>使用次數上限</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Stone Wand</td>
+							<td>16</td>
+							<td>256</td>
+						</tr>
+						<tr>
+							<td>Iron Wand</td>
+							<td>32</td>
+							<td>512</td>
+						</tr>
+						<tr>
+							<td>Diamond Wand</td>
+							<td>64</td>
+							<td>2048</td>
+						</tr>
+						<tr>
+							<td>Netherite Wand</td>
+							<td>256</td>
+							<td>4096</td>
+						</tr>
+					</tbody>
+				</table>
+				</p>
+			</div>
+			<div class="my-4" id="mod2">
+				<h5>CC: Restitched</h5>
+				<p>
+				CC: Restitched是ComputerCraft的Fabric版本，它添加了許多不同的電腦和烏龜機械人，你可以使用 Lua 編程以執行各種不同的任務。<br>
+				<strong>示範:</strong>
+				</p>
+				<img src="img/plugins/sign text.png" alt="Sign without Minecraft color" width="300">
+				<img src="img/plugins/coloured sign.png" alt="Sign with Minecraft color" width="300">
+				<br>
+				<img src="img/plugins/RGB sign text.png" alt="Sign without RGB color" width="300">
+				<img src="img/plugins/RGB coloured sign.png" alt="Sign with RGB color" width="300">
+			</div>
+			<div class="my-4" id="mod3">
+				<h5>CIT Resewn</h5>
+				<p>
+					CIT Resewn</p>
+			</div>
+			<div class="my-4" id="plug4">
+				<h5>Falling Override</h5>
+				<p><a href="https://dev.bukkit.org/projects/fallingoverride">https://dev.bukkit.org/projects/fallingoverride</a><br>
+				Falling Override回復了原版終界傳送門複製物品的機制。
+				</p>
+			</div>
+			<div class="my-4" id="plug5">
+				<h5>Interaction Visualizer</h5>
+				<p>
+				<a href="https://www.spigotmc.org/resources/interactionvisualizer-visualize-function-blocks-entities-like-crafting-tables-with-animations.77050/">https://www.spigotmc.org/resources/77050/</a><br>
+				Interaction Visualizer為Minecraft中不同的互動加入了動畫。當你在工作台合成物品時，放入的物品會顯示在工作台上方，它還增加了進度條和交易動畫，詳細功能請到以上網站查看。<br>
+				<strong>指令:</strong><br>
+				<code>/iv toggle itemstand (animation_name) true/false</code><br>
+				開關顯示靜態物品，例如合成枱和製圖台上的物品展示。<br>
+				<code>/iv toggle itemdrop (animation_name) true/false</code><br>
+				開關顯示掉落物的動畫，例如掉落物消失時間和交易物品。<br>
+				<code>/iv toggle hologram (animation_name) true/false</code><br>
+				開關顯示浮空文字，例如進度條。
+				</p>
+			</div>
+			<div class="my-4" id="plug6">
+				<h5>Interactive Chat</h5>
+				<p>
+				<a href="https://www.spigotmc.org/resources/interactivechat-show-items-inventory-in-chat-custom-chat-keywords-bungee-velocity-support.75870/">https://www.spigotmc.org/resources/75870/</a><br>
+				Interactive Chat能讓你在聊天中展示物品或位置等資訊，跟朋友溝通無難度。只要聊天時加上佔位文字，插件就會以對應資訊替代佔位文字。<br>
+				<strong>示範:</strong><br>
+				<img src="img/plugins/ic demo.png" alt="Interactive Chat Demo" width="400"><br>
+				<strong>佔位文字:</strong><br>
+				<code>[i]</code> 或 <code>[item]</code><br>
+				展示手持物品。<br>
+				<code>[inv]</code> 或 <code>[inventory]</code><br>
+				展示經驗值和身上所有物品。<br>
+				<code>[ender]</code><br>
+				展示自己終界箱裏的物品。<br>
+				<code>[gametime]</code><br>
+				展示遊戲內太陽對應的時間。<br>
+				<code>[pos]</code><br>
+				展示自己的座標和生態域。<br>
+				<code>[ping]</code><br>
+				展示自己的ping。<br>
+				<code>[/cmd]</code><br>
+				展示可點擊的Minecraft指令，例如 [/tell] 會發送可點擊文字，按下去後會自動輸入/tell指令，但不會發送。<br>
+				<code>&amp;0</code> 至 <code>&amp;f</code> 或 <code>&amp;#RRGGBB</code> 或 <code>[color=#RRGGBB]</code><br>
+				設定文字顏色。<br>
+				<code>&amp;k / &amp;l / &amp;m / &amp;n / &amp;o / &amp;r</code><br>
+				設定文字格式，格式化代碼可到<a href="https://minecraft.fandom.com/zh/wiki/%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%BB%A3%E7%A0%81">這裡</a>查看。<br>
+				</p>
+			</div>
+			<div class="my-4" id="plug7">
+				<h5>LWC Extended</h5>
+				<p>
+				<a href="https://www.spigotmc.org/resources/lwc-extended.69551/">https://www.spigotmc.org/resources/69551/</a><br>
+				LWC Extended能保護任何方塊及其內容物，玩家需用指令設定如何保護方塊，並右鍵該方塊來套用。除了擁有者，其他人都不可破壞。詳情可到<a href="https://github.com/pop4959/LWCX/wiki/Commands">這裡</a>查看。<br>
+				<strong>常用指令:</strong><br>
+				<code>/cpublic</code> 或 <code>/cprivate</code><br>
+				把方塊的擁有者設定成自己，別人可/不可使用或打開該方塊。<br>
+				<code>/cdisplay</code><br>
+				把方塊的擁有者設定成自己，別人可打開該方塊查看但不可移用內容物。<br>
+				<code>/cmodify public/private/display</code><br>
+				更改已被佔有的方塊的使用或開啟權限。<br>
+				<code>/credstone on/off</code><br>
+				設定是否讓方塊受紅石影響。<br>
+				<code>/chopper on/off</code><br>
+				設定是否讓漏斗向方塊放入或從方塊吸出物品。<br>
+				</p>
+			</div>
+			<div class="my-4" id="plug8">
+				<h5>Minecart Speed Plus</h5>
+				<p>
+				<a href="https://www.spigotmc.org/resources/minecart-speed-plus.69639/">https://www.spigotmc.org/resources/69639/</a><br>
+				Minecart Speed Plus新增了透過告示牌調整礦車車速的功能，將Minecraft的高速鐵路夢想化為現實。在加速路軌旁或支撐路軌的方塊下面插上告示牌，並在第一行寫上<code>[msp]</code>，在第二行寫上<code>數字</code>，礦車最高車速就會變成原版車速乘以該<code>數字</code>。想建造過山車的玩家也可以用它提供的礦車飛行功能，玩家只需在第二行寫上<code>fly</code>就能讓礦車跳過路軌之間的空隙，相反<code>nofly</code>則取消飛行效果。<br>
+				<strong>注意!必須使用橡木告示牌!</strong>
+				</p>
+				<strong>示範:</strong><br>
+				最高車速16m/s<br>
+				<img src="img/plugins/msp 1.png" alt="Minecart Speed Plus Demo 1" width="300"><br>
+				最高車速4m/s<br>
+				<img src="img/plugins/msp 2.png" alt="Minecart Speed Plus Demo 2" width="300"><br>
+				礦車飛起來<br>
+				<img src="img/plugins/msp 3.png" alt="Minecart Speed Plus Demo 3" width="300"><br>
+			</div>
+			<div class="my-4" id="plug9">
+				<h5>Spectator Mode</h5>
+				<p>
+				<a href="https://www.spigotmc.org/resources/smp-spectator-mode-1-18-support.77267/">https://www.spigotmc.org/resources/77267/</a><br>
+				Spectator Mode提供有限制的旁觀者模式，建築師可用此功能查看建築物內大大小小的角落，更易spawnproof。<br>
+				<strong>指令:</strong><br>
+				<code>/s</code><br>
+				切換旁觀者模式。<br>
+				</p>
+			</div>
+			<div class="my-4" id="plug10">
+				<h5>Paper Tweaks</h5>
+				<p>
+				<a href="https://www.spigotmc.org/resources/paper-tweaks-vanilla-tweaks-replacement.81288/">https://www.spigotmc.org/resources/81288/</a><br>
+				Paper Tweaks複製了Vanilla Tweaks Datapacks的功能，讓你的生存更有趣味。<br>
+				現時啟用了以下功能:
+				</p>
+				<ul class="my-0">
+					<li>AFK Display</li>
+					<li>Anti Creeper Grief</li>
+					<li>Anti Enderman Grief</li>
+					<li>Anti Ghast Grief</li>
+					<li>Coordinates HUD</li>
+					<li>Durability Ping</li>
+					<li>Fast Leaf Decay</li>
+					<li>More Mob Heads</li>
+					<li>Multiplayer Sleep</li>
+					<li>Nether Portal Coords</li>
+					<li>Player Head Drops</li>
+					<li>Real Time Clock</li>
+					<li>Rotation Wrenches</li>
+					<li>Unlock All Recipes</li>
+					<li>Villager Death Messages</li>
+					<li>Villager Workstation Highlights</li>
+				</ul>
+				<p>
+				<code>/gtime</code><br>
+				顯示伺服器的運行總時數。<br>
+				<code>/dping</code><br>
+				設定耐久度過低提示。<br>
+				<code>/pcoords</code><br>
+				根據你的位置計算地獄門的位置。<br>
+				<code>/togglehud</code><br>
+				切換顯示你的座標、方向、Minecraft時間。<br>
+				<code>/fwork</code><br>
+				搜尋最近的村民的工作台。<br>
+				</p>
+			</div>
+			
+			<hr>
+			
+			<h4 class="fw-bold">資源包</h4>
+			<div class="my-4" id="rss1">
+				<h5>Furnaces Reimagined</h5>
+				<p>
+				<a href="https://www.curseforge.com/minecraft/texture-packs/furnaces-reimagined">https://www.curseforge.com/minecraft/texture-packs/furnaces-reimagined</a><br>
+				為燃燒時的熔爐添上動畫。</p>
+			</div>
+			<div class="my-4" id="rss2">
+				<h5>Andros Discord Emojis</h5>
+				<p>
+				<a href="https://www.curseforge.com/minecraft/texture-packs/andros-discord-emojis">https://www.curseforge.com/minecraft/texture-packs/andros-discord-emojis</a><br>
+				為Minecraft提供完整的Emoji支援。</p>
+			</div>
+			<div class="my-4" id="rss3">
+				<h5>Blades of Majestica</h5>
+				<p>
+				<a href="https://www.planetminecraft.com/texture-pack/blades-of-majestica-3d-weapon-pack">https://www.planetminecraft.com/texture-pack/blades-of-majestica-3d-weapon-pack</a><br>
+				改裝特定名字的劍的外觀。<br>
+				</p>
+				<details open>
+					<summary>用鐵砧把劍命名成以下名字就會顯示不同的模型</summary>
+					<pre>epic sword
+steel sword
+jade halberd
+creation splitter
+mythic blade
+katana
+soul edge
+molten katana
+molten blade
+frost scythe
+moonlight greatsword
+legendary sword
+hero sword
+mjolnir
+acidic cleaver
+demonic cleaver
+netherite sword</pre>
+				</details>
+			</div>
+			<div class="my-4" id="rss4">
+				<h5>Boss Music</h5>
+				<p>
+				終界龍音樂: <a href="https://youtu.be/XfSO08uTMe4">https://youtu.be/XfSO08uTMe4</a><br>
+				凋零怪音樂: <a href="https://youtu.be/BU9z4AAE_T0">https://youtu.be/BU9z4AAE_T0</a><br>
+				重新塑造戰鬥氣氛。
+				</p>
+			</div>
+			<div class="my-4" id="rss5">
+				<h5>Elytrapack</h5>
+				<p>
+				<a href="https://www.planetminecraft.com/texture-pack/elytrapack-4728864">https://www.planetminecraft.com/texture-pack/elytrapack-4728864</a><br>
+				改裝特定名字的鞘翅的外觀。</p>
+				<details open>
+					<summary>用鐵砧把鞘翅命名成以下名字就會顯示不同的模型</summary>
+					<pre>Butterfly Elytra
+Crow Elytra
+Netherite Elytra
+Parrot Elytra
+Phantom Elytra
+Enderdragon Elytra</pre>
+				</details>
+			</div>
+			<div class="my-4" id="rss6">
+				<h5>Genshin Elytra</h5>
+				<p>
+				<a href="https://www.planetminecraft.com/texture-pack/genshin-impact-wind-glider-elytra-pack-optifine-required">https://www.planetminecraft.com/texture-pack/genshin-impact-wind-glider-elytra-pack-optifine-required</a><br>
+				把特定名字的鞘翅的外觀變成原神的翅膀。</p>
+				<details open>
+					<summary>用鐵砧把鞘翅命名成以下名字就會顯示不同的模型</summary>
+					<pre>First
+Companionship
+Descension
+Frost
+Feasting
+Mondstadt
+Liyue
+Inazuma
+Music</pre>
+				</details>
+			</div>
+			<div class="my-4" id="rss7">
+				<h5>Golem's Family</h5>
+				<p>
+				<a href="https://www.planetminecraft.com/texture-pack/golem-s-family">https://www.planetminecraft.com/texture-pack/golem-s-family</a><br>
+				銅巨人坐在鐵巨人之上享受親子時光。</p>
+			</div>
+			<div class="my-4" id="rss8">
+				<h5>More Tools</h5>
+				<p>
+				<a href="https://www.curseforge.com/minecraft/texture-packs/more-tools">https://www.curseforge.com/minecraft/texture-packs/more-tools</a><br>
+				改裝特定名字的工具或裝甲的外觀。</p>
+				<details open>
+					<summary>用鐵砧把工具命名成以下名字就會顯示不同的模型</summary>
+					<table>
+						<thead>
+							<th>名字</th>
+							<th>工具</th>
+						</thead>
+						<tbody id="more-tools-tools">
+						</tbody>
+					</table>
+				</details>
+				<details open>
+					<summary>用鐵砧把裝甲命名成以下名字就會顯示不同的模型</summary>
+					<table>
+						<thead>
+							<th>名字</th>
+							<th>裝甲</th>
+						</thead>
+						<tbody id="more-tools-armours">
+						</tbody>
+					</table>
+				</details>
+			</div>
+			<div class="my-4" id="rss9">
+				<h5>Nongfu's Fantasy Weapons</h5>
+				<p>
+				<a href="https://www.curseforge.com/minecraft/texture-packs/nongfu-3d-weapons">https://www.curseforge.com/minecraft/texture-packs/nongfu-3d-weapons</a><br>
+				改裝特定名字的武器的外觀。</p>
+				<details open>
+					<summary>用鐵砧把任何劍或斧命名成以下名字就會顯示不同的模型</summary>
+					<pre>Azure Great Axe
+Azure Greatsword
+Azure Sabre
+Azure Scythe
+Azure Short Sword
+Bloody Vengeance Blade
+Claymore
+Crimson Cleaver
+Demonic Sword
+Dragon Sword
+Iron Mace
+Iron Polearm
+Nature Sword
+Piercer
+Runic Piercer
+Skeleton Axe
+Spider Sword
+Treacherous Axe
+Treacherous Bludgeon
+Treacherous Cleaver
+Vindicator
+Wooden Bludgeon</pre>
+				</details>
+			</div>
+			<div class="my-4" id="rss10">
+				<h5>S33R Terrariums</h5>
+				<p>
+				<a href="https://www.planetminecraft.com/texture-pack/s33r-terrariums-and-jars">https://www.planetminecraft.com/texture-pack/s33r-terrariums-and-jars</a><br>
+				添加了許多玻璃瓶。</p>
+				<details open>
+					<summary>用鐵砧把玻璃瓶命名成以下名字，放入物品展示框就會顯示不同的模型</summary>
+					<pre>???? Terrarium
+Amethyst Terrarium
+Bamboo Terrarium
+Beach Terrarium
+Blue Fire Jar
+Cactus Terrarium
+Dead Terrarium
+End Terrarium
+Fairy Jar
+Fern Terrarium
+Fire Jar
+Flax Terrarium
+Flower Terrarium
+Glowshroom Terrarium
+Goldenrod Terrarium
+Honey Jar
+Koru Terrarium
+Lavender Terrarium
+Lush Terrarium
+Mushroom Terrarium
+Mystic Terrarium
+Nether Terrarium
+Ominous Terrarium
+Origin Terrarium
+Poison Jar
+Rainbow Terrarium
+Rose Quartz Terrarium
+Slime Jar
+Snow Jar
+Violet Terrarium
+Wasteland Terrarium</pre>
+				</details>
+			</div>
+			<div class="my-4" id="rss11">
+				<h5>Tailored Hats</h5>
+				<p>
+				<a href="https://www.curseforge.com/minecraft/texture-packs/tailored-hats">https://www.curseforge.com/minecraft/texture-packs/tailored-hats</a><br>
+				添加了許多帽。</p>
+<details open>
+					<summary>用鐵砧把雕刻過的南瓜命名成以下名字，戴上就會顯示不同的模型</summary>
+					<pre>adventure time
+bee hat
+brown hat
+cake daddy
+chicken cap
+cowpoke hide
+creeper hide hat
+donkey hide hood
+ender dragon hide hat
+enderman hide hat
+fox hide hat
+georgia devil
+goat skin hat
+guardian eye mask
+hoglin hat
+horse skull mask
+iron golem mask
+king trisekiel
+legendary goat hood
+log hood
+mining helmet
+moobloom hide
+mooshroom hide
+mossy cap
+ocelot hide hood
+phantom hide
+pillager hat
+plague cleric
+plague doctor
+platypus cap
+polar bear hood
+pufferfish hide
+ravager hat
+salmon scaled hat
+sculk helsing
+straw hat
+van helsing
+wither skull hat
+zombie horse hood</pre>
+				</details>
+			</div>
+			<div class="my-4" id="rss12">
+				<h5>Vanilla Tweaks</h5>
+				<p>
+				<a href=""></a><br>
+				包括以下資源包:
+				</p>
+				<ul>
+					<li>Sticky Piston Sides</li>
+					<li>Directional Hoppers</li>
+					<li>Directional Dispensers Droppers</li>
+					<li>Better Observers</li>
+					<li>Groovy Levers</li>
+					<li>Noteblock Banners</li>
+					<li>Unobtrusive Scaffolding</li>
+					<li>Lower Fire</li>
+					<li>Lower Shield</li>
+					<li>3D Stonecutters</li>
+					<li>Ping Color Indicator</li>
+					<li>Iron Bars Fix</li>
+				</ul>
+			</div>
+			<div class="my-4" id="rss13">
+				<h5>JV Hats</h5>
+				<p>
+				<a href="https://www.planetminecraft.com/texture-pack/jv-hats-5355565">https://www.planetminecraft.com/texture-pack/jv-hats-5355565</a><br>
+				添加了許多帽。</p>
+				<details open>
+					<summary>用鐵砧把雕刻過的南瓜命名成以下名字，戴上就會顯示不同的模型</summary>
+					<pre>Custom Orders
+Diamond Ore 
+Δ Oak Outfit™️ Δ
+Wooferscoots
+Fire
+
+-Propeller Hat-
+-Kitten Ears-
+-Party Hat-
+-Firework-
+-The Grind-
+-Turkey Hat-
+
+🌵 Jolly Hat 🌵
+🌵 Jolly Tree 🌵
+🌵 Jolly Carrot 🌵
+🌵 Straw 🌵
+🌵 Bag 🌵
+🌵 Pope 🌵
+
+🎊 Ushanka 🎊 
+🎊 Halo 🎊
+🎊 Crown 🎊
+🎊 Turtle 🎊
+🎊 Present 🎊
+🎊 Bottle 🎊
+
+💖 Cone 💖
+💖 Arrow 💖
+💖 Hard Hat 💖
+💘 Wizard 💘
+💘 Top Hat 💘
+💘 Love Antennas 💘
+
+⚜️ Cat in Hat ⚜️
+⚜️ Curious ⚜️
+⚜️ Wild ⚜️
+🥐 jeb_ 🥐
+🥐 Leprechaun 🥐
+🥐 Hoops 🥐</pre>
+				</details>
+			</div>
+		</div>
+		
+		
+	
+	</div>
+</div>

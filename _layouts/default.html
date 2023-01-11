@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>CUHK Doujin Minecraft Server</title>
+	<meta name="description" content="CUHK Doujin Minecraft Server Promotion and Documentation">
+	<meta name="author" content="CUHK Doujin">
+	<link rel="icon" href="icon.png">
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+	{% for file in page.css %}
+		<link rel="stylesheet" href="{{ file }}">
+	{% endfor %}
+	
+	{% for file in page.js %}
+		<script src="{{ file }}" defer></script>
+	{% endfor %}
+</head>
+<body>
+	<header class="container-fluid p-0">
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark px-4">
+			<div class="navbar-brand me-auto p-0">
+				<a class="p-0 mx-2 nav-link text-light fw-bold" href="index.html" id="brandlink">
+					<img src="icon.png" class="" alt="icon" width="50" height="50">
+					{{ site.soc_name }}
+				</a>
+			</div>
+
+			<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="navbar-collapse collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item mx-auto p-2">
+						<a class="nav-link" href="index.html">首頁</a>
+					</li>
+					<li class="nav-item mx-auto p-2">
+						<a class="nav-link" href="mods.html">模組</a>
+					</li>
+					<li class="nav-item mx-auto p-2">
+						<a class="nav-link" href="#">活動</a>
+					</li>
+					<li class="nav-item mx-auto p-2">
+						<a class="nav-link" href="#">相簿</a>
+					</li>
+					<li class="nav-item mx-auto p-2">
+						<a class="nav-link" href="#">支援</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	
+{{ content }}
+
+	{% comment -%}
+	<!--
+	problem:
+	after press the button, the nav bar wont drop down
+	guess:
+	js problem
+	found:
+	.show next to .navbar-collapse means expanded nav. And .collapsed in the button element means the nav is collapsed.
+	You can see it by F12 and press the button on bootstrap website
+	Solved:
+	https://stackoverflow.com/questions/65341620/navbar-dropdown-collapse-is-not-working-in-bootstrap-5
+	-->
+	{%- endcomment -%}
+
+	<footer class="py-3 bg-dark text-center text-light">
+		<p class="m-0">{{ site.soc_name }}</p>
+		<p class="m-0">歡迎透過以下途徑聯絡我們</p>
+		<a href="https://www.instagram.com/cudoujinsoc/"><i class="bi bi-instagram text-warning"></i></a> &nbsp;
+		<a href="https://www.facebook.com/cudoujin/"><i class="bi bi-facebook"></i></a> &nbsp;
+		Email: cudoujin@gmail.com<br>
+		最後更新: {{ site.time | date: '%Y/%m/%d' }}
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

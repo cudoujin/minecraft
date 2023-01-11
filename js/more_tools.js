@@ -10,7 +10,6 @@ for (const names of tools) {
         const en_name = ToolTypes['en'].map(t => names[0].replace("{tool}", t))
         const zh_name = ToolTypes['zh'].map(t => names[1].replace("{tool}", t))
         const temp = en_name.map((element, index) => [element, zh_name[index]])
-        console.log(temp)
         tool_extended = [...tool_extended, ...temp]
     }
 }
@@ -40,7 +39,6 @@ for (const names of armours) {
         const en_name = ArmourTypes['en'].map(t => names[0].replace("{armour}", t))
         const zh_name = ArmourTypes['zh'].map(t => names[1].replace("{armour}", t))
         const temp = en_name.map((element, index) => [element, zh_name[index]])
-        console.log(temp)
         armour_extended = [...armour_extended, ...temp]
     }
 }
