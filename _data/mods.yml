@@ -190,6 +190,11 @@ Puzzles Lib:
   side: both
   required: yes
   is_library: yes
+Reese's Sodium Options:
+  url: https://curseforge.com/minecraft/mc-mods/reeses-sodium-options
+  desc: Reese's Sodium Options 把 Sodium 的設定畫面更換成接近 OptiFine 的畫面。
+  side: client
+  required: optional
 Smooth Boot:
   url: https://www.curseforge.com/minecraft/mc-mods/smooth-boot
   desc: Smooth Boot 使 Minecraft 載入更快更流暢，避免卡頓及停止回應的問題。
@@ -197,7 +202,7 @@ Smooth Boot:
   required: optional
 Sodium Extra:
   url: https://www.curseforge.com/minecraft/mc-mods/sodium-extra
-  desc: Sodium Extra 把 Sodium 的設定畫面更換成接近 OptiFine 的畫面。
+  desc: Sodium Extra 為 Sodium 加入更多設定選項。
   side: client
   required: optional
 Sodium:

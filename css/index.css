@@ -40,15 +40,15 @@
 	padding: 0;
 }
 
-#download-box {
-	/*width: 90%;*/
+.w-90 {
+	width: 90%;
 }
 
-#download-box > div {
+#download-row > div {
 	min-width: 350px;
 }
 
-#download-box > div > div {
+#win-download-box, #mac-download-box {
 	border-width: 2px;
 	border-style: solid;
 	border-radius: 16px;
@@ -58,17 +58,16 @@
 	height: 100%;
 }
 
-#download-box > div > div > div > a {
+.download-box > div > a {
 	display: block;
 	width: 100%;
 	height: 100%;
 	font-size: 1.25rem;
 }
 
-#download-box > div > div > a {
+.download-box > a {
 	color: rgb(220 213 246);
 }
-
 
 #win-download-box {
 	border-color: #215497a0;

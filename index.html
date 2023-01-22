@@ -19,21 +19,21 @@ js:
 		<h5 class="text-center">不論你是哪種類型的玩家，都能享受其中。</h5>
 	</div>
 	<div class="row mx-auto justify-content-around text-center" id="server-type-box"> <!-- d-flex -->
-		<div class="col-3 px-0 arrow-animation">
+		<div class="col-10 col-md-3 px-0 mb-md-0 mb-4 arrow-animation">
 			<h2 class="fw-bold mb-4">休閒</h3>
 			<p>生存不再沉悶</p>
 			<p>多項功能讓你輕鬆跟隨朋友探險</p>
 			<p class="my-0"><a class="purple-text text-decoration-none" href="https://discord.gg/nTj5RKJ6KR">加入我們的 Discord <i class="bi bi-arrow-right arrow-animation"></i></a></p>
 		</div>
-		<div class="col-1"></div>
-		<div class="col-3 px-0 arrow-animation">
+		<div class="col-md-1"></div>
+		<div class="col-10 col-md-3 px-0 mb-md-0 mb-4 arrow-animation">
 			<h2 class="fw-bold mb-4">紅石</h3>
 			<p>農場、紅石不受限制</p>
 			<p>擁有良好出生點，盡情發揮後勤力量</p>
 			<p class="my-0"><a class="purple-text text-decoration-none" href="">查看公共農場位置 <i class="bi bi-arrow-right arrow-animation"></i></a></p>
 		</div>
-		<div class="col-1"></div>
-		<div class="col-3 px-0 arrow-animation">
+		<div class="col-md-1"></div>
+		<div class="col-10 col-md-3 px-0 mb-md-0 mb-4 arrow-animation">
 			<h2 class="fw-bold mb-4">建造</h3>
 			<p>農場供應無限資源</p>
 			<p>建造超大型建築不必煩惱資源短缺</p>
@@ -42,25 +42,28 @@ js:
 	</div>
 </section>
 
-<section class="container section-margin mx-auto text-center w-75">
+<section class="container section-margin mx-auto text-center w-90">
 	<h2 class="fw-bold mb-4">下載懶人包</h2>
 	<h5 class="mb-4">懶人包一鍵安裝並設定好 Java, Prism Launcher 和 Fabric 模組包</h5>
-	<div id="download-box" class="row gx-5 justify-content-center">
+	<div id="download-row" class="row gx-5 justify-content-center">
 		<div class="col-10 col-md-4 mb-md-0 mb-4">
-			<div id="win-download-box">
+			<div id="win-download-box" class="download-box">
 				<h2 class="fw-bold">Windows</h2>
 				<div class="mx-auto w-75 mb-2">
 					<a class="text-white text-decoration-none py-3" href="{{ site.all_in_one_windows_url }}">下載 <i class="bi bi-download"></i></a>
 				</div>
 				<a class="text-decoration-underline text-info" href="https://youtu.be/UvObdibbLdo">安裝教學</a>
-				<p class="my-0 fs-small">需要 Microsoft Visual C++ Redistributable 2022 x64 才能運行</p>
+				<p class="my-0 fs-small">需要 Microsoft Visual C++ Redistributable 2022 x64 (最新 Windows 版本已內置)</p>
 			</div>
 		</div>
 		<div class="col-10 col-md-4">
-			<div id="mac-download-box">
+			<div id="mac-download-box" class="download-box">
 				<h2 class="fw-bold">Mac</h2>
 				<div class="mx-auto w-75 mb-2">
-					<a class="text-white text-decoration-none py-3" href="{{ site.all_in_one_mac_url }}">下載 <i class="bi bi-download"></i></a>
+					<a class="text-white text-decoration-none py-3" href="{{ site.all_in_one_mac_intel_url }}">下載 Intel <i class="bi bi-download"></i></a>
+				</div>
+				<div class="mx-auto w-75 mb-2">
+					<a class="text-white text-decoration-none py-3" href="{{ site.all_in_one_mac_m1_url }}">下載 M1 <i class="bi bi-download"></i></a>
 				</div>
 				<a class="text-decoration-underline text-info" href="">安裝教學</a>
 			</div>
