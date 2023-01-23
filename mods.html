@@ -74,7 +74,7 @@ js:
 				{%- assign mod_name = mod_hash[0] -%}
 				{%- assign mod = mod_hash[1] -%}
 				<div class="my-4" id="mod{{ forloop.index }}">
-					<h5><a href="{{ mod.url }} ">{{ mod_name }}</a></h5>
+					<h5>{{ mod_name }} &nbsp;&nbsp;<a href="{{ mod.url }} "><img src="img/curseforge.svg" width="24" height="24"></a></h5>
 					{% if mod.is_library -%}
 						<p class="library-indicator">不是供玩家直接使用。</p>
 					{%- endif -%}

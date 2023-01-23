@@ -44,11 +44,11 @@
 	width: 90%;
 }
 
-#download-row > div {
+.download-row > div {
 	min-width: 350px;
 }
 
-#win-download-box, #mac-download-box {
+.download-box {
 	border-width: 2px;
 	border-style: solid;
 	border-radius: 16px;
@@ -65,28 +65,40 @@
 	font-size: 1.25rem;
 }
 
+.download-box > div {
+	border-radius: 10px;
+}
+
 .download-box > a {
 	color: rgb(220 213 246);
 }
 
-#win-download-box {
-	border-color: #215497a0;
+.download-box {
 	font-weight: 600;
 }
 
+#win-download-box {
+	border-color: #215497a0;
+}
+
 #win-download-box > div {
-	border-radius: 10px;
 	background: #215497a0;
 }
 
 #mac-download-box {
 	border-color: #c0431aa0;
-	font-weight: 600;
 }
 
 #mac-download-box > div {
-	border-radius: 10px;
 	background: #c0431aa0;
+}
+
+#modpack-download-box {
+	border-color: #eb9f26a0;
+}
+
+#modpack-download-box > div {
+	background: #eb9f26a0;
 }
 
 .fs-small {
