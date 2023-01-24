@@ -1,0 +1,60 @@
+:root {
+    --color-1: black;
+    --color-2: white;
+}
+
+.timeline {
+    margin: 4em auto;
+    position: relative;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding-left: 0;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    width: 75%;
+    list-style-type: none;
+}
+
+.timeline:before {
+    background-color: var(--color-1);
+    content: '';
+    margin-left: -1px;
+    position: absolute;
+    top: 0;
+    left: 2em;
+    width: 2px;
+    height: 100%;
+}
+
+.timeline-event {
+    position: relative;
+}
+
+.timeline-event > div {
+    padding: 2em;
+    position: relative;
+    top: -1.875em;
+    left: 4em;
+    width: 80%;
+}
+
+.timeline-icon {
+    background-color: var(--color-1);
+    outline: 10px solid var(--color-2);
+    display: block;
+    margin: 0.5em 0.5em 0.5em -0.5em;
+    position: absolute;
+    top: 0;
+    left: 2em;
+    width: 1em;
+    height: 1em;
+    transform: rotate(45deg);
+}
+
+.timeline-date {
+    display: inline-block;
+    color: var(--color-2);
+    font-size: 0.75em;
+    background-color: var(--color-1);
+    margin-bottom: 1.2em;
+    padding: 0.25em 1em 0.25em 1em;
+}
