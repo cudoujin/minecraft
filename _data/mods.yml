@@ -210,11 +210,6 @@ Sodium:
   desc: Sodium 用作替代 OptiFine 的渲染引擎，它比 OptiFine 大大提高了 FPS 和相容性。
   side: client
   required: optional
-Speed Carts:
-  url: https://www.curseforge.com/minecraft/mc-mods/speed-carts
-  desc: Speed Carts 新增了透過告示牌調整礦車車速的功能，將Minecraft的高速鐵路夢想化為現實。在路軌旁插上告示牌，第一行寫上<code>數字</code>，礦車的最高車速便會變成<code>數字</code>m/s。
-  side: server
-  required: no
 Starlight:
   url: https://www.curseforge.com/minecraft/mc-mods/starlight
   desc: Starlight 是重寫光照引擎以增加性能和修復光照錯誤的模組。
